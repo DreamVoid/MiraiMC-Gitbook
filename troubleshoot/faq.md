@@ -27,9 +27,11 @@ description: 此页介绍了如何排查并解决使用机器人时出现的问�
 > [!TIP|style:flat]
 > 此问题在 Java 11 及以上显示为 `java.lang.AbstractMethodError: Receiver class org.sqlite.Conn does not define or inherit an implementation of the resolved method 'abstract boolean isValid(int)' of interface java.sql.Connection.`
 
-你的服务端自带的 SQLite 驱动版本过旧，不支持 Java 5（没错就是 Java‘ 5）的新特性，并且由于驱动内置于服务端，MiraiMC 无法通过加载外部依赖的方式更新 SQLite。
+你的服务端自带的 SQLite 驱动版本过旧，不支持 Java 6（没错就是 Java 6）的新特性，并且由于驱动内置于服务端，MiraiMC 无法通过加载外部依赖的方式更新 SQLite。
 
-此问题通常出现在 1.8.8 及更旧版本，唯一的解决方案是更新你的服务端或 SQLite 驱动版本，有关技术性细节，请搜索 `sqlite-jdbc`。
+此问题通常出现在 1.8.8 及更旧版本，唯一的解决方案是更新你的服务端或 SQLite 驱动版本。
+
+有关技术性细节，请访问 https://stackoverflow.com/questions/32783706。
 
 ## 在 Bukkit+Forge 服务端使用时出现报错、无法正常加载插件
 
