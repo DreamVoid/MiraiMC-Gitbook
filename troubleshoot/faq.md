@@ -31,7 +31,7 @@ description: 此页介绍了如何排查并解决使用机器人时出现的问�
 
 此问题通常出现在 1.8.8 及更旧版本，唯一的解决方案是更新你的服务端或 SQLite 驱动版本。
 
-有关技术性细节，请访问 https://stackoverflow.com/questions/32783706。
+有关技术性细节，请访问 https://stackoverflow.com/questions/32783706 。
 
 ## 在 Bukkit+Forge 服务端使用时出现报错、无法正常加载插件
 
